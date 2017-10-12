@@ -1,4 +1,9 @@
-mixin title (header, descr)
-  .title.title--with-bottom-line
+mixin title (header, descr, bottomLine)
+  if bottomLine === "no"
+    .title
+      h2.title.title__header= header
+      .title__text= descr
+  else
+    .title.title--with-bottom-line
       h2.title.title__header= header
       .title__text= descr
