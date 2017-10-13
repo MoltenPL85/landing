@@ -2,6 +2,9 @@
   padding: 100px 0 110px 0;
   color: #ffffff;
   background-color: #1287bf;
+  @media (max-width: 810px) {
+    padding: 50px 0 55px 0;
+  }
   .title {
     margin-bottom: 12px;
   }
@@ -36,6 +39,10 @@
   color: #828282;
   text-align: center;
   background-color: #ffffff;
+  @media (max-width: 810px) {
+    width: 90%;
+    padding: 25px;
+  }
   &-container {
     padding-top: 30px;
   }
@@ -69,7 +76,7 @@
     line-height: 1.5;
   }
   &__fields {
-    margin-bottom: 36px;
+    margin-bottom: 33px;
   }
   &__input {
     width: 76%;
