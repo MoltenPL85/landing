@@ -15,5 +15,5 @@
     return Boolean(str);
   }
 
-  contacts.validation = me;
+  MAX.validation = me;
 }());

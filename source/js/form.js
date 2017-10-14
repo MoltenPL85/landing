@@ -35,10 +35,10 @@
     if (!me.isAllCompleted(requiredFields)) {
       console.log('Заполните, пожалуйста все необходимые поля');
       return false;
-    } else if (!contacts.validation.isEmail(emailValue)) {
+    } else if (!MAX.validation.isEmail(emailValue)) {
       console.log('Введите корректный Email');
       return false;
-    } else if (!contacts.validation.isNumber(numberValue)) {
+    } else if (!MAX.validation.isNumber(numberValue)) {
       console.log('Неверный номер');
       return false;
     }
@@ -50,7 +50,7 @@
     var result = true;
 
     for (var i = 0; i < data.length; i++) {
-      if (!contacts.validation.isNotEmpty(data[i].value)) {
+      if (!MAX.validation.isNotEmpty(data[i].value)) {
         result = false;
         break;
       }
@@ -59,5 +59,5 @@
     return result;
   };
 
-  contacts.form = me;
+  MAX.form = me;
 }());

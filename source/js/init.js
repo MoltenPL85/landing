@@ -1,1 +1,1 @@
-window.contacts = {};
+window.MAX = {};
