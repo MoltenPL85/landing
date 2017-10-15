@@ -3,10 +3,12 @@
   vertical-align: top;
   margin-right: 15px;
   margin-left: 172px;
+
   @media (max-width: 1080px) {
     margin-left: 0;
     margin-bottom: 15px;
   }
+
   &__link {
     display: inline-block;
     vertical-align: top;
@@ -17,10 +19,12 @@
     color: #424242;
     transition: 0.3s;
     font-size: 0.9rem;
+
     &:hover,
     &--active {
       color: #de2b24;
     }
+
     &:after {
       content: '';
       display: inline-block;
@@ -31,11 +35,14 @@
       border-radius: 50%;
       background: #424242;
     }
+
     &:last-child:after {
       display: none;
     }
+
     @media (max-width: 530px) {
       display: block;
+      
       &:after {
         display: none;
       }
